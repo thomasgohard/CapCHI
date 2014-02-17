@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		
+		<title>Delivering information and services in a fast-paced, multi-device world: How the Government of Canada is meeting the challenge</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="A talk on optimising JavaScript plugins to reduce the number of reflows and repaints to improve performance." />
+		
+		<link rel="stylesheet" href="css/reveal.min.css" />
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme" />
+		<link rel="stylesheet" href="lib/css/zenburn.css" />
+		<link rel="stylesheet" href="reveal-overrides.css" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1 class="left-aligned">Delivering information and services in a fast-paced, multi-device world: How the Government of Canada is meeting the challenge</h1>
+					<p class="left-aligned">Thomas Gohard</p>
+					<p class="medium left-aligned">Usability and accessibility researcher<br />
+					Web Standards Office<br />
+					Treasury Board of Canada Secretariat</p>
+				</section>
+				<section>
+					<img src="this-was-the-web.png" />
+				</section>
+				<section>
+					<img src="this-is-the-web.png" />
+				</section>
+				<section>
+					<img src="this-will-be-the-web.png" />
+				</section>
+				<section>
+					<p class="left-aligned"><span class="invisible">+ </span>more devices</p>
+					<p class="left-aligned">+ more browsers</p>
+					<p class="left-aligned">+ more screen sizes and resolutions</p>
+					<p class="left-aligned">+ more types of networks</p>
+					<p class="left-aligned">+ more types of inputs</p>
+					<p class="left-aligned border-top"><span class="invisible">+ </span>complex problem</p>
+				</section>
+				<section>
+					<p>How fast do people expect a Web page to load?</p>
+					<p class="big fragment" data-fragment-index="0">2 seconds</p>
+				</section>
+				<section>
+					<p>How small of an increase in page load time can have an effect on user behaviour?</p>
+					<p class="big fragment" data-fragment-index="0">100 milliseconds</p>
+				</section>
+				<section>
+					<p class="big">How can we meet these expectations?</p>
+				</section>
+				<section>
+					<h2>m-dot sites</h2>
+					<ul>
+						<li>Requires developing multiple sites</li>
+						<li>Limited functionality (usually)</li>
+						<li>Poor first-hit performance due to redirection</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Mobile applications</h2>
+					<ul>
+						<li>Best performance potential</li>
+						<li>Best support for device features</li>
+					</ul>
+					<p class="left-aligned margin-top margin-bottom">but&hellip;</p>
+					<ul>
+						<li>Highest development and maintenance costs</li>
+						<li>Lowest level of portability</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Responsive design</h2>
+					<ul>
+						<li>Not as fast as native applications</li>
+						<li>Not all device features supported (yet)</li>
+					</ul>
+					<p class="left-aligned margin-top margin-bottom">but&hellip;</p>
+					<ul>
+						<li>One site that works on all devices</li>
+					</ul>
+				</section>
+				<section>
+					<p class="big">What is the Government of Canada doing?</p>
+				</section>
+				<section>
+					<p class="big">Responsive<br />before<br />apps</p>
+				</section>
+				<section>
+					<p class="big">Progressive enhancement &amp; mobile-first</p>
+				</section>
+				<section>
+					<p class="big margin-bottom">Interoperability</p>
+					<ul>
+						<li>UTF-8</li>
+						<li>HTML5</li>
+						<li>HTML data</li>
+					</ul>
+				</section>
+				<section>
+					<p class="big">Performance targets</p>
+					<div class="two-columns">
+						<div>
+							<p>Page load:</p>
+							<p>Target: &le; 2 seconds</p>
+							<p>Cap: &lt; 5 seconds</p>
+						</div>
+						<div>
+							<p>Page weight:</p>
+							<p>Target: &le; 200 kb</p>
+							<p>Cap: &lt; 500 kb</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<p class="big">Optimisation</p>
+					<ul>
+						<li>Touch</li>
+						<li>Page weight and load time</li>
+						<li>Rendering</li>
+					</ul>
+				</section>
+				<section>
+					<p class="big">Web site consolidation</p>
+				</section>
+				<section>
+					<p class="big">Content, content, content</p>
+				</section>
+				<section>
+					<p class="big">How are we getting all this done?</p>
+				</section>
+				<section>
+					<p class="big">Web Experience Toolkit</p>
+					<p><a href="http://wet-boew.github.io">wet-boew.github.io</a></p>
+				</section>
+				<section>
+					<p class="big">User Experience Working Group</p>
+				</section>
+				<section>
+					<p class="big margin-bottom left-aligned">Thank you!</p>
+					<p class="medium left-aligned">Original <a href="http://bradfrostweb.com/blog/post/this-is-the-web/"><em>This is the Web</em> images by Brad Frost</a></p>
+					<p class="medium left-aligned">Statistics on mobile performance sourced from <a href="http://programming.oreilly.com/2014/01/web-performance-is-user-experience.html"><em>Web performance is user experience</em> by Lara Swanson</a></p>
+				</section>
+			</div>
+		</div>
+		
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+	</body>
+</html>
